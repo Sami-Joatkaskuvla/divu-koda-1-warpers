@@ -6,12 +6,11 @@ var idx;
 for (idx = 0; idx < numbers.length; idx++) {
   var factor;
   var divisor = numbers[idx];
-
-  if (dividend % divisor === 0) {
-    factor = true;
+  var divid = (dividend)/(divisor);
+  if (Number.isInteger(divid) === true) {
+    factor();
   }
-
-  if (factor) {
+}
+function factor(){
     console.log(divisor + ' is a factor of ' + dividend + '!');
-  }
 }
